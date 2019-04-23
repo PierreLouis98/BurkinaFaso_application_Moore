@@ -1,0 +1,49 @@
+
+
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Fiches tehniques</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+
+
+    <ion-list>
+                <ion-row>
+        <ion-col width-50 style="text-align: right">
+            <button ion-button round large (click)="begin()">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button icon-only round large (click)="play()">
+            <ion-icon name="ios-volume-up"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: left">
+            <button ion-button icon-only round large (click)="stop()">
+            <ion-icon name="ios-volume-off"></ion-icon>
+                </button>
+        </ion-col>
+    </ion-row>
+        <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)"> 
+{{item.title}}
+<div class="item-note" item-right>
+        {{item.note}} 
+          
+</div>
+</button>
+    </ion-list>
+</ion-content>
+
+
+<!-- DOIT PASSER EN PARAMETRE:
+            -l'image
+            -les questions et réponses
+-->

@@ -1,0 +1,99 @@
+<ion-header>
+
+    <ion-navbar [color]="c">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+      </button>
+        <ion-title>Simulation</ion-title>
+        <!--    <ion-title> {{score(p1, p2)}} </ion-title> -->
+    </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding>
+    <ion-slides pager>
+
+
+         <ion-slide *ngFor="let item of items; let i = index">
+            <!--         BOUTON AUDIO       -->
+            <ion-row>
+                <ion-col width-50 style="text-align: right">
+                    <button ion-button round [color]="c" large (click)="begin(i)">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+                </button>
+                </ion-col>
+                <ion-col width-50 style="text-align: center">
+                    <button ion-button icon-only [color]="c" round large (click)="play(i)">
+                        <ion-icon name="ios-volume-up"></ion-icon>
+                </button>
+                </ion-col>
+                <ion-col width-50 style="text-align: left">
+                    <button ion-button icon-only [color]="c" round large (click)="stop(i)">
+                        <ion-icon name="ios-volume-off"></ion-icon>
+                </button>
+                </ion-col>
+            </ion-row>
+
+            <ion-list radio-group [(ngModel)]="actor[i]">
+                <div></div>
+                <h2>Question {{this.item.ind}}</h2>
+                <!-- utiliser un index -->
+                <ion-list-header>
+                    <button ion-button large round [color]="c" text-wrap>{{this.item.interro[0]}}</button>
+                </ion-list-header>
+
+                      <ion-item>
+                    <ion-label>{{this.item.interro[1]}}</ion-label>
+                    <ion-radio value="1"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{this.item.interro[2]}}</ion-label>
+                    <ion-radio value="2"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{this.item.interro[3]}}</ion-label>
+                    <ion-radio value="3"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{this.item.interro[4]}}</ion-label>
+                    <ion-radio value="4"></ion-radio>
+                </ion-item>
+            </ion-list>
+        </ion-slide>
+        
+             <ion-slide>
+            <ion-row>
+                <ion-col width-50 style="text-align: center">
+                    <button ion-button large [color]="c" round (click)="showAlert()">Valider</button>
+                </ion-col>
+            </ion-row>
+
+         </ion-slide>
+        
+    <!--     <ion-slide>
+                <h2>Récapitulatif:</h2>
+                <h2 *ngFor="let item of items; let i = index">
+                {{message[i]}};
+                </h2>
+             
+         </ion-slide>-->
+
+
+    </ion-slides>
+</ion-content>
+
+
+
+
+<!-- PROCHAINES ETAPES:
+
+        - ERREUR: SI L'UTILISATEUR NE REPOND PAS A TOUTES LES QUESTIONS ET APPUIE SUR VALIDER
+
+        -trouver un moyen pour afficher le score seulement si l'utilisateur a donné une réponse pour chaque question et qu'il a validé
+
+
+        -POUR AFFICHER LE RESULTAT, REGARDER ALERTS DANS COMPONENT
+
+-->

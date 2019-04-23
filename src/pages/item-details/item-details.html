@@ -1,0 +1,77 @@
+<ion-header>
+    <ion-navbar [color]="c">
+        <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{selectedItem.note}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-slides pager>
+
+        <!-- ATTENTION !!!: INDEX EVOLUE COMME ETAPE !! (PAS COMME QUESTION)-->
+
+        <ion-slide *ngFor="let interro of selectedItem.question; let i = index">
+            <ion-row>
+                <ion-col width-50 style="text-align: right">
+                    <button ion-button round large [color]="c" (click)="begin(i)">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+                </button>
+                </ion-col>
+                <ion-col width-50 style="text-align: center">
+                    <button ion-button icon-only round large [color]="c" (click)="play(i)">
+            <ion-icon name="ios-volume-up"></ion-icon>
+                </button>
+                </ion-col>
+                <ion-col width-50 style="text-align: left">
+                    <button ion-button icon-only round large [color]="c" (click)="stop(i)">
+            <ion-icon name="ios-volume-off"></ion-icon>
+                </button>
+                </ion-col>
+            </ion-row>
+
+            <!-- attention, actor doit être un tableau 2 dimensions -->
+            <h2>Question {{i + 1}}</h2>
+            <ion-list radio-group [(ngModel)]="actor[i]">
+                <button ion-button [color]="c" round large text-wrap> {{interro[0]}}</button>
+                <ion-item class="item item-text-wrap">
+                    <ion-label>{{interro[1]}}</ion-label>
+                    <ion-radio value="1"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{interro[2]}}</ion-label>
+                    <ion-radio value="2"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{interro[3]}}</ion-label>
+                    <ion-radio value="3"></ion-radio>
+                </ion-item>
+                <ion-item>
+                    <ion-label>{{interro[4]}}</ion-label>
+                    <ion-radio value="4"></ion-radio>
+                </ion-item>
+            </ion-list>
+        </ion-slide>
+        
+        <ion-slide>
+            <ion-row>
+                <ion-col width-50 style="text-align: center">
+                    <button ion-button large [color]="c" round (click)="gotoResultat($event, selectedItem.ind)">Valider</button>
+                </ion-col>
+            </ion-row>
+          </ion-slide>
+     
+
+    </ion-slides>
+</ion-content>
+
+
+
+<!--
+
+        PROCHAINES ETAPES:
+                                -ACTIVER/DESACTIVER LE BOUTON VALIDER
+
+        
+-->

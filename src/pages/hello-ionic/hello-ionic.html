@@ -1,0 +1,98 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <button ion-button menuToggle> 
+      <ion-icon name="menu"></ion-icon> 
+    </button>
+        <ion-title>
+            <h3 text-center>Kobenga</h3>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<!-- La fiche technique est inutile: A la fin, d'un quizz il faut faire apparaitre un bouton:"voir les réponses" pour les faire afficher avec le score-->
+
+
+<ion-content class="weather-home" padding>
+
+            <ion-row>
+                <ion-col width-50 style="text-align: right">
+                    <button ion-button round large [color]="c" (click)="begin()">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+                </button>
+                </ion-col>
+                <ion-col width-50 style="text-align: center">
+                    <button ion-button icon-only round large [color]="c" (click)="play()">
+            <ion-icon name="ios-volume-up"></ion-icon>
+                </button>
+                </ion-col>
+                <ion-col width-50 style="text-align: left">
+                    <button ion-button icon-only round large [color]="c" (click)="stop()">
+            <ion-icon name="ios-volume-off"></ion-icon>
+                </button>
+                </ion-col>
+            </ion-row>
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ion-row>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button round large color="primary" (click)="gotoMenu2()">Commencer</button>
+        </ion-col>
+    </ion-row>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+         <ion-row>
+        <ion-col width-50 style="text-align: center">
+            <ion-img width="100" height="100" src="../../assets/imgs/orange.png"></ion-img>
+        </ion-col>
+    </ion-row>
+    
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    PROBLEME RESTANT A REGLER:
+    -POUR LA LANGUE, REGARDER POPOVERS DANS COMPONENT
+    -POUR LES BOUTONS, REGARDER TOOLBAR (BUTTONS IN TOOLBARS) DANS COMPONENT, OU BUTTONS IN COMPONENT
+-->
+
+

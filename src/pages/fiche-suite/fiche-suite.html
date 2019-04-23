@@ -1,0 +1,31 @@
+<ion-header >
+    <ion-navbar color="secondary">
+        <button menuToggle *ngIf="!selectedItem">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>{{etape}}</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+ 
+
+
+
+
+<ion-card>
+  <img src={{image()}}/>
+  <ion-card-content>
+    <ion-card-title>
+        {{this.etape}}
+      </ion-card-title>
+    <h1> Score: {{score}} </h1>
+    <p> Voici les bonnes réponses:</p>
+    <p *ngFor="let interro of question">
+        {{interro}}
+    </p>
+  </ion-card-content>
+</ion-card>
+    
+    </ion-content>

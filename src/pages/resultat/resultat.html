@@ -1,0 +1,41 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Resultat</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <!--         BOUTON AUDIO       -->
+    <ion-row>
+        <ion-col width-50 style="text-align: right">
+            <button ion-button round [color]="c" large (click)="begin()">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button icon-only [color]="c" round large (click)="play()">
+                        <ion-icon name="ios-volume-up"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: left">
+            <button ion-button icon-only [color]="c" round large (click)="stop()">
+                        <ion-icon name="ios-volume-off"></ion-icon>
+                </button>
+        </ion-col>
+    </ion-row>
+
+    <ion-card>
+        <img src="../../assets/imgs/20160814_163321.jpg" />
+        <ion-card-content>
+            <ion-card-title>
+                Nine Inch Nails Live
+            </ion-card-title>
+            <p>
+                The most popular industrial group ever, and largely responsible for bringing the music to a mass audience.
+            </p>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Récapitulatif:</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+          <ion-row>
+        <ion-col width-50 style="text-align: right">
+            <button ion-button round large (click)="begin()">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button icon-only round large (click)="play()">
+            <ion-icon name="ios-volume-up"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: left">
+            <button ion-button icon-only round large (click)="stop()">
+            <ion-icon name="ios-volume-off"></ion-icon>
+                </button>
+        </ion-col>
+    </ion-row>
+
+
+
+      {{avertissement[0]}}
+      {{avertissement[1]}}
+      {{avertissement[2]}}
+      {{avertissement[3]}}
+      {{avertissement[4]}}
+  </ion-list>
+
+</ion-content>
+
+
+
+<!-- POUR CETTTE PAGE, REGARDER LE COMPONENT "MODALS" SUR LE SITE IONIC -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+

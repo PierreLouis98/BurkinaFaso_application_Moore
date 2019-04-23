@@ -1,0 +1,74 @@
+<ion-header>
+
+    <ion-navbar [color]="c">
+        <ion-title>
+            <h3 text-center>Menu</h3>
+        </ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="gp-home" padding>
+    <ion-row>
+        <ion-col width-50 style="text-align: right">
+            <button ion-button [color]="c" round large (click)="begin()">
+            <ion-icon name="ios-arrow-back"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button [color]="c" icon-only round large (click)="play()">
+            <ion-icon name="ios-volume-up"></ion-icon>
+                </button>
+        </ion-col>
+        <ion-col width-50 style="text-align: left">
+            <button ion-button [color]="c" icon-only round large (click)="stop()">
+            <ion-icon name="ios-volume-off"></ion-icon>
+                </button>
+        </ion-col>
+    </ion-row>
+
+
+
+
+    <br>
+    <br>
+    <br>
+ 
+
+
+
+    <ion-row>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button block large [color]="c" (click)="gotoQuizz()">1. Quizz</button>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button block large [color]="c" (click)="gotoSimulation()">2. Simulation</button>
+        </ion-col>
+    </ion-row>
+    <br>
+    <br>
+ 
+     <ion-row>
+        <ion-col width-50 style="text-align: center">
+            <ion-img width="300" height="82" src="../../assets/imgs/Agrilead.jpg"></ion-img>
+        </ion-col>
+    </ion-row>
+    
+</ion-content>
+
+<!--
+    <ion-row>
+        <ion-col width-50 style="text-align: center">
+            <button ion-button block color="light" (click)="gotoContact()">1. Contacts</button>
+        </ion-col>
+    </ion-row>
+-->
+
+
+
+    <!--
+        CHANGER DE TYPE DE NAVIGUATIONcdcd
+-->
