@@ -35,22 +35,23 @@ export class SuitePage {
 
         
         /** Tab de question */
-        this.question = [['1.	Quelle variété de niébé comptez-vous produire ?','A.	Mobenga','B.	KVX 442','C.	Bengsiido', 'D.  Autres'],
-        ['2.	Quel revenu souhaitez-vous obtenir après la vente?','A.	   Moins de 50 000 F','B.	Entre 50 000 et  100 000 F','C.	Entre 100 000 et 200 000 F','D.	Plus de 200 000 F'],
-        ['3.	Sur quelle superficie  comptez-vous produire votre niébé ?','A.	Entre 0,25 et un 1 Hectare','B.	Entre 1 et 3 Ha','C.	Entre 3 et  5 Ha', 'D.    Autres'],
-        ['4.	A quelle période de l’année souhaitez-vous vendre ?','A.	Entre janvier et mars','B.	Entre avril et juin','C.	Entre juillet et septembre','D.	Entre octobre et décembre'],
-        ['5.	Combien de sacs de 100 kg  de niébé espérez-vous récolter  ?','A.	Moins de 5 sacs ','B.	Entre 5 et 20 sacs','C.	Entre 21 et 30 sacs','D.	Plus de 50 sacs'],
-        ['6.	Combien vous coute les équipements ?','A.	Moins de 10 000 F','B.	Entre 10 000 et 20 000 F','C.	Entre 20 005 et 50 000 F','D.	Plus de 50 000 F'],
-        ['7.	Combien de francs vous coute la main d’œuvre','A.	Moins de 10 000 F','B.	Entre 10 000 et 20 000 F','C.	Entre 20 005 et 50 000 F','D.	Plus de 50 000 F'],
-        ['8.	Combien de francs vous coutent les semences','A.	Moins de 10 000 F','B.	Entre 10 000 et 20 000 F','C.	Entre 20 005 et 50 000 F','D.	Plus de 50 000 F'],
-        ['9.	Combien de francs vous coutent les produits phyto','A.	Moins de 10 000 F','B.	Entre 10 000 et 20 000 F','C.	Entre 20 005 et 50 000 F','D.	Plus de 50 000 F'],
-        ['10.	Combien de francs vous coute l’engrais ','A.	Moins de 50 000 F','B.	Entre 50 000 et 200 000F','C.	Entre 200 000 F et 300 000F','D.	Plus de 300 000'],
-        ['11.	Combien de francs vous coutent les autres dépenses ?','A.	Moins de 50 000 F','B.	Entre 50 000 et 200 000F','C.	Entre 200 000 F et 300 000F','D.	Plus de 300 000'],
-        ['12.	Quels sont vos besoins de niébé pour la consommation, les dons  (etc) pour l’année ?','A.	Moins de 5 sacs ','B.	Entre 5 et 20 sacs','C.	Entre 21 et 30 sacs','D.	Plus de 50 sacs'],
-        ['13.	Quelle quantité de niébé souhaitez-vous vendre ?','A.	Moins de 5 sacs ','B.	Entre 5 et 20 sacs','C.	Entre 21 et 30 sacs','D.	Plus de 50 sacs'],
-        ['14.	A quel prix souhaitez-vous vendre  le  Kg  votre niébé ?','A.	Entre 0 et 250 F','B.	Entre 255 et 400 F','C.	Entre 405 et 600 F','D.	Plus de 600 F']];
+        this.question = [['1.	Yaa beng-bu bʋg la yãmb na n ko ?', 'a.	Mo-bɛnga', 'b.	Kom kalle', 'c.	Beng-sɩɩdo', 'd.	Nafi', 'e.	Yiisyande', 'f.	Ninzwe'],
+                                  ['2.	Yãmb rat n koosame n paam wãã?', 'a.	Pa rat n koos ye', 'b.	sẽn pa w 10 000', 'c.	W 10 000 ne W 20 000 sʋka', 'd.	 W 20 001 ne W 40 000 sʋka', 'e.	sẽn yɩɩd w 40 000'],
+                                  ['3.	Yãmb magd n nan koo pʋʋg yalem sẽn wãna?', 'a.	ɛktaare  ¼ n tãag sẽn pa ta ɛktaare', 'b.	ɛktaare  1 ne sẽn pa ta ɛktaare 3  sʋka', 'c.	ɛktaare  3 ne ɛktaare 5  sʋka'],
+                                  ['4.	Yãmb rat n koosame ki bʋgo?', 'a.	yʋʋm vẽkr kiuug  ne tʋʋlg kiuug sʋka', 'b.	tʋʋl-nif kiuug ne sɩgr kiuugsʋka', 'c.	sẽoog kiuug  ne bõn bɩʋʋng kiuug sʋka', 'd.	zi-likr kiuug ne yʋʋm-sar- kiuug sʋka'],
+                                  ['5.	Yãmb saagda y  na n noga bɛng kilo 100 yond a wãna?', 'a.	Pa ta yond a 5 ye', 'b.	Yond a 5 ne yond 20 sʋka', 'c.	Yond 21 ne yond 50 sʋka', 'd.	Yɩɩgda yond 50'],
+                                  ['6.	Koobã tʋʋm teed raab yikda yãmb wãna?', 'a.	Pa tat W 2000', 'b.	W 2000 ne W 4 000 sʋka', 'c.	W 4001 ne W 10 000 sʋka', 'd.	Yɩɩda w 10 000'],
+                                  ['7.	Tʋʋm sẽn maand ne nugã yikda yãmb wãna?', 'a.	Pa tat W 2000', 'b.	W 2000 ne W 4 000 sʋka', 'c.	W 4001 ne W 10 000 sʋka', 'd.	Yɩɩda w 10 000'],
+                                  ['8.	Bõn-buudã ligd yikda yãmb wãna?', 'a.	Pa tat W 2000', 'b.	W 2000 ne W 4 000 sʋka', 'c.	W 4001 ne W 10 000 sʋka', 'd.	Yɩɩda w 10 000'],
+                                  ['9.	tɩtãligd yikda yãmb wãna?', 'a.	Pa tat W 2000', 'b.	W 2000 ne W 4 000 sʋka', 'c.	W 4001 ne W 10 000 sʋka', 'd.	Yɩɩda w 10 000'],
+                                  ['10.	Nasaar birgã ligd yikda yãmb wãna?', 'a.	Pa tat W 10 000', 'b.	W 10 000 ne W 40 000 sʋka', 'c.	W 40 001 ne W 60 000 sʋka', 'd.	Yɩɩda w 60 000'],
+                                  ['11.	Depãensa a taabã ligd yikda yãmb wãna?', 'a.	Pa tat W 10 000', 'b.	W 10 000 ne W 40 000 sʋka', 'c.	W 40 001 ne W 60 000 sʋka', 'd.	Yɩɩda w 60 000'],
+                                  ['12.	Yãmb raabã ne bɛngã sẽn kẽed  rɩɩbo, kũuni….wɛɛgẽ yʋʋmda tore yaa wãna?', 'a.	Pa ta yond a 5 ye', 'b.	Yond a 5 ne yond 20 sʋka', 'c.	Yond 21 ne yond 50 sʋka', 'd.	Yɩɩgda yond 50'],
+                                  ['13.	bɛng yond a wãn la yãmb rat (saagd n na) n koose ?', 'a.	Pa ta yond a 5 ye', 'b.	Yond a 5 ne yond 20 sʋka', 'c.	Yond 21 ne yond 50 sʋka', 'd.	Yɩɩgda yond 50'],
+                                  ['14.	yãmb rat (saagd n na) n koosa  bɛng kilo fãa wakɩr a wãna ?', 'a.	zaalem ne w 50 sʋka', 'b.	W 55 ne W 80 sʋka', 'c.	W 81 ne W 120 sʋka', 'd.	Yɩɩda w 120']];
   
-  
+
+
         for (var i = 0; i < this.index.length; i++)
             this.audio.push(new Audio('assets/audio/Francais/' + this.index[i] + '.m4a'));
             
